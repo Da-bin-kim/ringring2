@@ -13,8 +13,15 @@ import com.dessert.ringring.config.MailHandler;
 import com.dessert.ringring.config.TemKey;
 import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.mapper.MemberMapper;
+<<<<<<< HEAD
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
+=======
+
+@Service
+>>>>>>> mina/main
 public class ServiceMemberImpl implements ServiceMember{ 
 //implements UserDetailsService{
 

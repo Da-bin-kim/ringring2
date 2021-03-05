@@ -7,10 +7,10 @@
 <!-- 1. 회원가입 -->
 <insert id="insertMember" parameterType="com.dessert.ringring.domain.DTOMember" useGeneratedKeys="true" keyProperty="idx">
 	insert into user 
-		(id, name, pw, phone, address, email, article, date, pin, point, authority)
+		(id, name, pw, phone, address, email, article, date, pin, point, authority,isEnable)
 		values 
 		(#{id}, #{name}, #{password}, IFNULL(#{phone}, NULL) , IFNULL(#{address}, NULL), IFNULL(#{email}, NULL)
-		, IFNULL(#{article}, 'N'), now(), NULL, 0, IFNULL(#{authority}, 'member'))
+		, IFNULL(#{article}, 'N'), now(), NULL, 0, IFNULL(#{authority}, 'member'), IFNULL(#{isEnable}, 'N'))
 </insert>
 
 
@@ -20,7 +20,7 @@
 
 
 <!-- 3. 회원정보 조회 -->
-<select id="getMemberInfo" parameterType="com.dessert.ringring.domain.DTOMember">
+<select id="getMemberInfo" parameterType="com.dessert.ringring.domain.DTOMember" resultType="com.dessert.ringring.domain.DTOMember">
 	SELECT * FROM user WHERE id=#{id}
 </select>
 
@@ -57,6 +57,6 @@
 
 <!-- 10.이메일 인증 -->
 <update id="updateAct">
-	update user set isEnabled='Y' where email=#{email}
+	update user set isEnable="Y" where id=#{id}
 </update>
 </mapper>

@@ -79,6 +79,10 @@ public class LoginController {
 			System.out.println("로그인 성공");
 			
 			HttpSession session=req.getSession();
+<<<<<<< HEAD
+			session.setAttribute("member",member);
+=======
+>>>>>>> mina/main
 			session.setAttribute("userId",member.getId());
 			session.setAttribute("userName",member.getName());
 

@@ -1,12 +1,13 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 
 /* 폰트 위계 */
 
-/* font-family: 'Nerko One', cursive;
-font-family: 'Noto Sans KR', sans-serif; */
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
 
 
 *{
@@ -16,16 +17,24 @@ font-family: 'Noto Sans KR', sans-serif; */
 .tt{
     font-family: 'Noto Sans KR', sans-serif;
 }
-
+input{
+    border: 0;
+    outline: 0;
+}
+button{
+    border: 0;
+    outline: 0;
+}
 /* header========================= */
 
 #header{
     width: 100%;
-    height: 150px;
+    /* height: 150px; */
+    height: 220px;
 }
 #header_inner{
     width: 1000px;
-    height: 150px;
+    /* height: 150px; */
     margin: 0 auto;
     /* background-color: lavender; */
 }
@@ -33,6 +42,7 @@ font-family: 'Noto Sans KR', sans-serif; */
 .usr_menu{
     width: 100%;
     height: 20px;
+    padding: 10px 0 30px;
 }
 .usr_menu ul{
     float: right;
@@ -58,7 +68,7 @@ font-family: 'Noto Sans KR', sans-serif; */
     width: 260px;
     height: 90px;
     text-indent: -999em;
-    background-image: url(../image/RingRing_logo.PNG);
+    background-image: url(../image/ringring_ver1.png);
     /* background-repeat: no-repeat; */
     background-position: center center;
     background-size: cover;
@@ -66,6 +76,7 @@ font-family: 'Noto Sans KR', sans-serif; */
 /* =============gnbMenu============= */
 .gnbMenu{
     height: 40px;
+    padding: 20px 0 10px;
 }
 .gnb{
     height: 40px; 
@@ -73,9 +84,10 @@ font-family: 'Noto Sans KR', sans-serif; */
 .gnbMenu .gnb li{
     float: left;
     list-style: none;
-    font-family: 'Nerko One', cursive;
-    font-size: 25px; 
-    padding: 10px 54px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px; 
+    padding: 10px 59px 0px;
     text-align: center;
 }
 .gnbMenu .gnb li:last-child{
@@ -84,8 +96,8 @@ font-family: 'Noto Sans KR', sans-serif; */
 .gnbMenu .gnb li a{
     text-decoration: none;
 }
-.gnbMenu .gnb li a:visited{
-    color:rgb(246, 113, 114);
+.gnbMenu .gnb li a{
+    color:#df404a;
 }
 /*========== cookie =========== */
 .cookie{
@@ -102,6 +114,7 @@ font-family: 'Noto Sans KR', sans-serif; */
     float: none;
     color: rgb(60, 60, 60);
     text-decoration: none;
+    padding: 5px 0;
     display: block;
     text-align: left;
 }
@@ -127,6 +140,7 @@ font-family: 'Noto Sans KR', sans-serif; */
     float: none;
     color: rgb(60, 60, 60);
     text-decoration: none;
+    padding: 5px 0;
     display: block;
     text-align: left;
 }
@@ -152,6 +166,7 @@ font-family: 'Noto Sans KR', sans-serif; */
     float: none;
     color: rgb(60, 60, 60);
     text-decoration: none;
+    padding: 5px 0;
     display: block;
     text-align: left;
 }
@@ -163,33 +178,31 @@ font-family: 'Noto Sans KR', sans-serif; */
     display: block;
 }
 /* =========search-container=========== */
+.search-container{
+    position: relative;
+}
 .search-container input{
     border-radius: 80px;
-    padding: 10px 20px;
-    border: 2px solid rgb(246, 113, 114);
+    padding: 10px 20px; 
+    background-color: rgba(161, 161, 161, .1);
 }
 .search-container button{
+    position: absolute;
+    right: 50px;
     border-radius: 50%;
     padding: 10px;
-    border: 2px solid rgb(246, 113, 114);
-    background-color: rgb(255, 255, 255);
-}
-.search-container button .fa{
-    color: rgb(246, 113, 114);
+    background-color: rgba(161, 161, 161, .0);
 }
 /* =============banner=========== */
 #banner{
     width: 100%;
-    height: 300px;
+    height: 350px;
     background-color: pink; 
-}
-#banner_inner{
-    width: 1000px;
-    margin: 0 auto;
 }
 .bs-slider img{
     width: 100%;
-    height: 300px;
+    height: 350px;
+    background-position: center;
 }
 .bx-wrapper{
     position: relative;
@@ -211,13 +224,16 @@ font-family: 'Noto Sans KR', sans-serif; */
 }
 .newfood h2{
     text-align: center;
-    padding: 50px 0 20px;
+    padding: 60px 0 40px;
     font-size: 35px;
-    font-family: 'Nerko One', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 .new_list li{
     float: left;
     padding-left: 40px;
+}
+.new_list li:last-child{
+    padding-right: 0;
 }
 .new_list img{
     width: 200px;
@@ -236,18 +252,20 @@ font-family: 'Noto Sans KR', sans-serif; */
     display: block;
 }
 .new2{
-    padding-top: 20px;
+    padding: 20px 0;
 }
 /* =========status============== */
 .status{
-    background-color: rgb(246, 113, 114);
+    background-color: #df404a;
     width: 100%;
     height: 2px;
-    display: inline-block;
+    display: block;
+    /* display: inline-block; */
 }
 /* =============footer============== */
 #footer{
     width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 .footer_inner{
@@ -273,10 +291,12 @@ font-family: 'Noto Sans KR', sans-serif; */
 }
 .footer_left .center{
     padding-left: 10px;
+    color: rgb(60, 60, 60);
 }
 .footer_left .center p{
-    color: rgb(90, 90, 90);
+    color: rgb(161, 161, 161);
     padding-top: 5px;
+    font-weight: 300;
 }
 .footer_left .sns{
     padding-top: 30px;
@@ -285,7 +305,7 @@ font-family: 'Noto Sans KR', sans-serif; */
     float: left;
     font-size: 20px;
     padding: 10px;
-    border: 2px solid  rgb(246, 113, 114);
+    border: 2px solid  #df404a;
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -314,14 +334,14 @@ font-family: 'Noto Sans KR', sans-serif; */
     padding-top: 25px;
     font-size: 13px;
     line-height: 18px; /* 줄 간격 */
-    color: rgb(90, 90, 90);
+    color: rgb(60, 60, 60);
 }
 .footer_right .company .bar{
     padding: 0 4px 0;
-    color: rgb(60, 60, 60);
+    color: rgb(161, 161, 161);
 }
 .footer_right .copyright{
     font-size: 10px;
     padding-top: 15px;
-    color: rgb(90, 90, 90);
+    color: rgb(60, 60, 60);
 }

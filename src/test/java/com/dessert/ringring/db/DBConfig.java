@@ -1,5 +1,13 @@
 package com.dessert.ringring.db;
 
+<<<<<<< HEAD
+import com.dessert.ringring.domain.DTOCart;
+import com.dessert.ringring.domain.DTOGoods;
+import com.dessert.ringring.mapper.CartMapper;
+=======
+import com.dessert.ringring.domain.DTOGoods;
+>>>>>>> mina/main
+import com.dessert.ringring.mapper.GoodsMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +17,8 @@ import org.springframework.context.ApplicationContext;
 import com.dessert.ringring.domain.DTOMember;
 import com.dessert.ringring.mapper.MemberMapper;
 import com.dessert.ringring.service.ServiceMember;
+
+import java.util.List;
 
 @SpringBootTest
 public class DBConfig {
@@ -26,7 +36,19 @@ public class DBConfig {
 	
 	@Autowired
 	private DTOMember member;
-	
+
+	@Autowired
+	private DTOGoods goods;
+
+	@Autowired
+	private GoodsMapper goodsMapper;
+
+<<<<<<< HEAD
+	@Autowired
+	private CartMapper cartMapper;
+
+=======
+>>>>>>> mina/main
 	@Test
 	public void testByApplicationContext() {
 		try {
@@ -85,6 +107,24 @@ public class DBConfig {
 		  int result =mapper.updateAct("satam_1@naver.com");
 		  
 		  System.out.println(result);
+	  }
+
+	  @Test
+	public void listGoods(){
+		List<DTOGoods> list=goodsMapper.listGoods();
+
+		  System.out.println(list);
+		  System.out.println(goodsMapper.selectBoardTotalCount());
+
+<<<<<<< HEAD
+	  }
+
+	  @Test
+	public void listCart(){
+		List<DTOCart> list=cartMapper.listCart("admin");
+		  System.out.println(list);
+=======
+>>>>>>> mina/main
 	  }
 	  
 }

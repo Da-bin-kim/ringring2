@@ -11,11 +11,7 @@
     <title>RingRing : 회원가입</title>
 </head>
 <body>
-    <div id="header">
-        <a href="index.html">
-            <h1 class="logo">logo</h1>
-        </a> 
-    </div>
+
     <div id="container">
         <div id="content">
             <div class="joinhead">
@@ -106,6 +102,7 @@
             <div id="formSubmit">
                 <button type="submit" class="btn active btn_join tt">가입하기</button>
             </div>
+             </form>
         </div>
     </div>
 </body>

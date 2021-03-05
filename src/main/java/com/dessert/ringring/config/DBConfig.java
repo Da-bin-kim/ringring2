@@ -13,8 +13,14 @@ import org.springframework.context.annotation.Configuration;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
+@EnableTransactionManagement
+@PropertySource("classpath:/application.properties")
 public class DBConfig {
 	
 	 @Autowired
@@ -51,5 +57,14 @@ public class DBConfig {
 	    public org.apache.ibatis.session.Configuration mybatisConfg() {
 	        return new org.apache.ibatis.session.Configuration();
 	    }
+<<<<<<< HEAD
+
+	    @Bean
+		public PlatformTransactionManager transactionManager(){
+	    	return new DataSourceTransactionManager(dataSource());
+		}
+
+=======
+>>>>>>> mina/main
 
 }
