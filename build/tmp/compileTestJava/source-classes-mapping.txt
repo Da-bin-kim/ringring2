@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 com/dessert/ringring/db/DBConfig.java
  com.dessert.ringring.db.DBConfig
 com/dessert/ringring/RingringApplicationTests.java
  com.dessert.ringring.RingringApplicationTests
-=======
-com/dessert/ringring/RingringApplicationTests.java
- com.dessert.ringring.RingringApplicationTests
-com/dessert/ringring/db/DBConfig.java
- com.dessert.ringring.db.DBConfig
->>>>>>> mina/main

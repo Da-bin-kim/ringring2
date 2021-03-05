@@ -1,12 +1,8 @@
 package com.dessert.ringring.db;
 
-<<<<<<< HEAD
 import com.dessert.ringring.domain.DTOCart;
 import com.dessert.ringring.domain.DTOGoods;
 import com.dessert.ringring.mapper.CartMapper;
-=======
-import com.dessert.ringring.domain.DTOGoods;
->>>>>>> mina/main
 import com.dessert.ringring.mapper.GoodsMapper;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.jupiter.api.Test;
@@ -43,12 +39,9 @@ public class DBConfig {
 	@Autowired
 	private GoodsMapper goodsMapper;
 
-<<<<<<< HEAD
 	@Autowired
 	private CartMapper cartMapper;
 
-=======
->>>>>>> mina/main
 	@Test
 	public void testByApplicationContext() {
 		try {
@@ -116,15 +109,12 @@ public class DBConfig {
 		  System.out.println(list);
 		  System.out.println(goodsMapper.selectBoardTotalCount());
 
-<<<<<<< HEAD
 	  }
 
 	  @Test
 	public void listCart(){
 		List<DTOCart> list=cartMapper.listCart("admin");
 		  System.out.println(list);
-=======
->>>>>>> mina/main
 	  }
 	  
 }

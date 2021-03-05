@@ -27,19 +27,11 @@
                     <li><a href="/login">로그인</a></li>
                     </c:when>
                     <c:otherwise>
-<<<<<<< HEAD
                     <li>안녕하세요 ${sessionScope.userName}님!</li>
                     <li><a href="${path}/logout">로그아웃</a></li>
                     </c:otherwise>
                     </c:choose>
                     <li><a href="/cart">장바구니</a></li>
-=======
-                    <li>${sessionScope.userName}님이 로그인중입니다.</li>
-                    <li><a href="${path}/logout">로그아웃</a></li>
-                    </c:otherwise>
-                    </c:choose>
-                    <li><a href="">장바구니</a></li>
->>>>>>> mina/main
                     <li><a href="">고객센터</a></li>
                 </ul>
             </div>

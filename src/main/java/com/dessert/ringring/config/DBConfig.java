@@ -57,14 +57,11 @@ public class DBConfig {
 	    public org.apache.ibatis.session.Configuration mybatisConfg() {
 	        return new org.apache.ibatis.session.Configuration();
 	    }
-<<<<<<< HEAD
 
 	    @Bean
 		public PlatformTransactionManager transactionManager(){
 	    	return new DataSourceTransactionManager(dataSource());
 		}
 
-=======
->>>>>>> mina/main
 
 }

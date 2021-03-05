@@ -13,18 +13,12 @@ import org.springframework.stereotype.Service;
 
 import com.dessert.ringring.domain.DTOGoods;
 import com.dessert.ringring.mapper.GoodsMapper;
-<<<<<<< HEAD
 import org.springframework.transaction.annotation.Transactional;
-=======
->>>>>>> mina/main
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-<<<<<<< HEAD
 @Transactional
-=======
->>>>>>> mina/main
 public class ServiceGoodsImpl implements ServiceGoods {
 	@Autowired
 	GoodsMapper mapper;

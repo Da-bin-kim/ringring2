@@ -1,6 +1,5 @@
 package com.dessert.ringring.service;
 
-<<<<<<< HEAD
 import com.dessert.ringring.domain.DTOCart;
 import com.dessert.ringring.domain.DTOMember;
 
@@ -15,11 +14,5 @@ public interface ServiceCart {
     int sumMoney(HttpServletRequest req);
     int deleteAll(HttpServletRequest req);
     int countCart(HttpServletRequest req);
-=======
-import javax.servlet.http.HttpServletRequest;
-
-public interface ServiceCart {
-    int insertCart(HttpServletRequest req);
->>>>>>> mina/main
 
 }

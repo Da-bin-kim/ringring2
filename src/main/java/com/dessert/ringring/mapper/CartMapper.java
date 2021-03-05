@@ -6,11 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-<<<<<<< HEAD
 @Repository
-=======
-
->>>>>>> mina/main
 @Mapper
 public interface CartMapper {
     int insertCart(DTOCart cart);
