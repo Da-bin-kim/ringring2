@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@300;500&display=swap');
+
+
+/* 폰트 위계 */
+
+/*font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.tt{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a:link{
+    color: rgb(246, 113, 114);
+    text-decoration: none;
+}
+/* =======product=========== */
+#product{
+    width: 100%;
+}
+/* =======product_inner===== */
+#product_inner{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+#product_inner h2{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(246, 113, 114);
+    text-align: center;
+    padding-top: 40px;
+}
+/* =======product_list======= */
+.product_list{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+.product_list li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    font-size: 15px;
+    margin: 50px 40px;
+    padding: 5px 0;
+    border: 1px solid rgb(246, 113, 114);
+    border-radius: 85px;
+    flex: 1;
+}
+.product_list li a{
+    color: rgb(246, 113, 114);
+}
+.product_list::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* =======product_img======== */
+.product_img li{
+    float: left;
+    padding: 0 0 20px 40px;
+}
+.product_img li img{
+    width: 200px;
+    height: 300px;
+}
+.product_img li h3{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.product_img li p{
+    font-size: 18px;
+}
+.product_img::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+/* ========dorpdown========== */
+.dropbtn {
+    background-color: white;
+    color: rgb(60, 60, 60);
+    padding: 5px 10px;
+    font-size: 13px;
+    border: 1px solid rgb(161, 161, 161);
+    cursor: pointer;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    position: relative;
+}
+/* .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}  */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    font-size: 13px;
+    background-color: #f1f1f1;
+    /* min-width: 160px; */
+    overflow: auto;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+    top: 29px;
+    margin-left: 40px;
+    /* margin-top: 29px; */
+}
+  
+.dropdown-content a {
+    color: black;
+    width: 77px;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown a:hover {background-color: #ddd;}
+  
+.show {display: block;}

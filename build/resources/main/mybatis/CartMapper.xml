@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dessert.ringring.mapper.CartMapper">
+    <insert id="insertCart" parameterType="com.dessert.ringring.domain.DTOCart" useGeneratedKeys="true" keyProperty="idx">
+	insert into cart
+		(product_idx, price, amount, id)
+		values
+		(#{productIdx}, #{price}, #{amount}, #{id})
+</insert>
+
+    <select id="listCart" resultType="com.dessert.ringring.domain.DTOCart">
+	select * from cart right join product on cart.product_idx=product.idx where id=#{id}</select>
+    <select id="sumMoney" parameterType="com.dessert.ringring.domain.DTOCart" resultType="java.lang.Integer">
+		SELECT sum(price*amount) FROM cart where id=#{id}
+	</select>
+
+	<select id="countCart" parameterType="com.dessert.ringring.domain.DTOCart" resultType="java.lang.Integer">
+		SELECT COUNT (*) FROM cart where id=#{id}
+	</select>
+
+    <update id="updateCart" parameterType="com.dessert.ringring.domain.DTOCart"></update>
+
+	<delete id="deleteCart" parameterType="com.dessert.ringring.domain.DTOCart">
+	DELETE FROM cart WHERE product_idx=#{productIdx} and id=#{id}
+</delete>
+
+	<delete id="deleteAll" parameterType="com.dessert.ringring.domain.DTOCart">
+	DELETE FROM cart WHERE id=#{id}
+</delete>
+</mapper>

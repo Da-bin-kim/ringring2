@@ -1,0 +1,60 @@
+Index: .idea/jsLibraryMappings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/jsLibraryMappings.xml b/.idea/jsLibraryMappings.xml
+new file mode 100644
+--- /dev/null	(date 1614759386000)
++++ b/.idea/jsLibraryMappings.xml	(date 1614759386000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JavaScriptLibraryMappings">
++    <file url="PROJECT" libraries="{jQuery}" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1614952608256)
++++ b/.idea/modules.xml	(date 1614952608256)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/ringring.iml" filepath="$PROJECT_DIR$/.idea/ringring.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/libraries/jQuery.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/libraries/jQuery.xml b/.idea/libraries/jQuery.xml
+new file mode 100644
+--- /dev/null	(date 1614759386000)
++++ b/.idea/libraries/jQuery.xml	(date 1614759386000)
+@@ -0,0 +1,13 @@
++<component name="libraryTable">
++  <library name="jQuery" type="javaScript">
++    <properties>
++      <option name="frameworkName" value="jQuery" />
++      <option name="frameworkVersion" value="3.6.0" />
++    </properties>
++    <CLASSES>
++      <root url="file://$PROJECT_DIR$/../../jquery-3.6.0.min.js" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES />
++  </library>
++</component>
+\ No newline at end of file
