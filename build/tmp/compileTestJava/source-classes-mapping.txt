@@ -1,4 +1,6 @@
-com/dessert/ringring/db/DBConfig.java
- com.dessert.ringring.db.DBConfig
 com/dessert/ringring/RingringApplicationTests.java
  com.dessert.ringring.RingringApplicationTests
+com/dessert/ringring/BoardApplicationTests.java
+ com.dessert.ringring.BoardApplicationTests
+com/dessert/ringring/db/DBConfig.java
+ com.dessert.ringring.db.DBConfig
